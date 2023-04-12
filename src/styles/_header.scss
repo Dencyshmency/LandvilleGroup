@@ -1,0 +1,59 @@
+.header {
+  background: var(--psw-footer-bg);
+  color: red;
+  padding: 20px 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  .header-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    .header-link {
+      font-family: 'Segoe UI';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.08em;
+      color: var(--psw-white-text-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transition: all 0.3s ease;
+        color: var(--psw-link-hover)
+      }
+    }
+
+    .button-contact-us {
+      background: var(--psw-button-color);
+      border: none;
+      padding: 10px 24px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      color: var(--psw-white-text-color);
+      font-family: 'Segoe UI';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+
+      &:hover {
+        background: var(--psw-button-hover);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+}

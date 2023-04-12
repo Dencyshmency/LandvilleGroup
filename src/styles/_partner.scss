@@ -1,0 +1,53 @@
+.partner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 174px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  .partner-title {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--psw-white-text-color);
+  }
+
+  .partner-sub-title {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: var(--psw-text2-color);
+    margin: 30px 0 40px 0;
+  }
+
+  .button-contact {
+    cursor: pointer;
+    padding: 14px 40px;
+    background: var(--psw-button-color);
+    border: none;
+    border-radius: 4px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--psw-white-text-color);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transition: all 0.3s ease;
+      background: var(--psw-button-hover);
+
+    }
+  }
+
+}
+

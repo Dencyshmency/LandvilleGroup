@@ -1,0 +1,35 @@
+
+.welcome-wrapper {
+  padding: 220px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 69px;
+  text-align: center;
+  margin: 0 176px;
+  color: var(--psw-white-text-color);
+}
+.wrapper_main-sub-title {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 274px;
+
+
+  .main-sub-title {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: var(--psw-text2-color);
+  }
+
+}
