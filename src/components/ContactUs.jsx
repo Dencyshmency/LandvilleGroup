@@ -6,6 +6,11 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 
 function ContactUs({ setIsShowMenu, isShowMenu }) {
+  const toggleMenu = () => {
+    document.body.style.position = 'static';
+    setIsShowMenu({ ...isShowMenu, contactMenu: false });
+  };
+
   const [dataForm, setDataForm] = useState({
     name: '',
     email: '',
@@ -45,11 +50,7 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
       }`}
     >
       <div className="contact-us-toggle">
-        <button
-          type="button"
-          className="contact-button-active"
-          onClick={() => setIsShowMenu({ ...isShowMenu, contactMenu: false })}
-        >
+        <button type="button" className="contact-button-active" onClick={() => toggleMenu()}>
           <span className="contact-button-line" />
         </button>
       </div>
@@ -86,9 +87,8 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
               id="email-contact"
             />
           </label>
-          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-          <p className="phone-text">
-            Phone Number
+          <div>
+            <p className="phone-text">Phone Number</p>
             <PhoneInput
               country="us"
               id="phone-contact"
@@ -99,7 +99,8 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
                 })
               }
             />
-          </p>
+          </div>
+
           <label htmlFor="#text-contact">
             Your Message
             <input

@@ -1,9 +1,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Logo from '../../public/Logotip.png';
+import Logo from '../../public/Logotip.svg';
 
 function Header({ setIsShowMenu, isShowMenu }) {
+  const toggleMenu = () => {
+    document.body.style.position = 'fixed';
+    setIsShowMenu({ ...isShowMenu, burgerMenu: true });
+  };
+
+  const toggleMenus = () => {
+    document.body.style.position = 'fixed';
+    setIsShowMenu({ ...isShowMenu, contactMenu: true });
+  };
+
   return (
     <header className="header">
       <Link href="/" className="logotip-link">
@@ -19,11 +29,7 @@ function Header({ setIsShowMenu, isShowMenu }) {
         <Link href="/" className="header-link">
           LandVille
         </Link>
-        <button
-          type="button"
-          className="button-contact-us"
-          onClick={() => setIsShowMenu({ ...isShowMenu, contactMenu: true })}
-        >
+        <button type="button" className="button-contact-us" onClick={() => toggleMenus()}>
           Contact Us
         </button>
       </div>
@@ -31,7 +37,7 @@ function Header({ setIsShowMenu, isShowMenu }) {
         type="button"
         className="burger-button"
         aria-label="burger-button"
-        onClick={() => setIsShowMenu({ ...isShowMenu, burgerMenu: true })}
+        onClick={() => toggleMenu()}
       >
         <span className="burger-buttons" />
       </button>

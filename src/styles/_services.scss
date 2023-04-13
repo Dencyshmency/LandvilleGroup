@@ -84,6 +84,10 @@
           color: var(--psw-white-text-color);
         }
 
+        .gray-text-color {
+          transition: 0.3s ease;
+          color: rgba(255, 255, 255, 0.6);
+        }
 
       }
 
@@ -142,8 +146,13 @@
           font-size: 16px;
           line-height: 24px;
           color: var(--psw-text2-color);
-        }
 
+
+        }
+        .gray-text-color {
+          color: rgba(255, 255, 255, 0.6);
+          transition: 0.3s ease;
+        }
 
         &:hover .card-arrow {
           width: 28px;
@@ -166,6 +175,12 @@
       &:hover .card-item {
         transition: 0.3s linear;
         transform: scale(1.03);
+      }
+
+      &:hover .gray-text-color {
+        transition: 0.3s ease;
+        color: var(--psw-white-text-color)
+
       }
     }
   }

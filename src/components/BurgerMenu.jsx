@@ -3,14 +3,15 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react
 import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 function BurgerMenu({ isShowMenu, setIsShowMenu }) {
+  const toggleMenu = () => {
+    document.body.style.position = 'static';
+    setIsShowMenu({ ...isShowMenu, burgerMenu: false });
+  };
+
   return (
     <div className={`burger-menu-wrapper ${isShowMenu.burgerMenu === true ? 'active-burger' : ''}`}>
       <div className="burger-toggle">
-        <button
-          type="button"
-          className="burger-button-active"
-          onClick={() => setIsShowMenu({ ...isShowMenu, burgerMenu: false })}
-        >
+        <button type="button" className="burger-button-active" onClick={() => toggleMenu()}>
           <span className="burger-button-line" />
         </button>
       </div>

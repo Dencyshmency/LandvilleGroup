@@ -1,4 +1,8 @@
 function Partner({ setIsShowMenu, isShowMenu }) {
+  const toggleMenus = () => {
+    document.body.style.position = 'fixed';
+    setIsShowMenu({ ...isShowMenu, contactMenu: true });
+  };
   return (
     <div className="content-wrapper">
       <div className="partner-wrapper">
@@ -8,11 +12,7 @@ function Partner({ setIsShowMenu, isShowMenu }) {
         <p className="partner-sub-title">
           Join us to supercharge your real estate endeavors and achieve remarkable outcomes!
         </p>
-        <button
-          type="button"
-          className="button-contact"
-          onClick={() => setIsShowMenu({ ...isShowMenu, contactMenu: true })}
-        >
+        <button type="button" className="button-contact" onClick={() => toggleMenus()}>
           Contact Us
         </button>
       </div>
