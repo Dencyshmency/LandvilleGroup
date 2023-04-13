@@ -4,7 +4,6 @@
     "next/core-web-vitals",
     "eslint:recommended",
     "plugin:import/recommended",
-
     "airbnb",
     "prettier"
   ],

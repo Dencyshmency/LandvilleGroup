@@ -5,7 +5,11 @@ const myFont = localFont({
   src: [
     { path: '../fonts/Segoe UI.ttf', weight: '400', style: 'normal' },
     { path: '../fonts/Segoe UI Bold.ttf', weight: '700', style: 'normal' },
-    { path: '../fonts/Segoe UI Bold Italic.ttf', weight: '700', style: 'italic' },
+    {
+      path: '../fonts/Segoe UI Bold Italic.ttf',
+      weight: '700',
+      style: 'italic',
+    },
     { path: '../fonts/Segoe UI Italic.ttf', weight: '400', style: 'italic' },
   ],
 });

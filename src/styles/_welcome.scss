@@ -1,35 +1,114 @@
 
 .welcome-wrapper {
-  padding: 220px 0;
+  padding: 220px 0 140px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
-}
 
-.main-title {
-  font-weight: 700;
-  font-size: 52px;
-  line-height: 69px;
-  text-align: center;
-  margin: 0 176px;
-  color: var(--psw-white-text-color);
-}
-.wrapper_main-sub-title {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin: 0 274px;
-
-
-  .main-sub-title {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
+  .main-title {
+    font-family: var(--bs-body-font-family);
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 69px;
     text-align: center;
-    letter-spacing: 0.01em;
-    color: var(--psw-text2-color);
+    color: var(--psw-white-text-color);
+  }
+
+  .wrapper_main-sub-title {
+    display: flex;
+    flex-direction: column;
+    max-width: 732px;
+    width: 100%;
+    gap: 30px;
+
+
+
+    .main-sub-title {
+      font-family: var(--bs-body-font-family);
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: 0.01em;
+      color: var(--psw-text2-color);
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
+@media all and (min-width: 376px) and (max-width: 768px)  {
+
+  .welcome-wrapper {
+    padding: 200px 0 120px 0;
+
+    .main-title {
+      font-size: 48px;
+      line-height: 64px;
+      margin: 0 26px;
+    }
+
+    .wrapper_main-sub-title {
+      margin: 0 26px;
+
+      .main-sub-title {
+        font-size: 16px;
+        line-height: 24px;
+
+      }
+    }
   }
 
 }
+
+@media all and (max-width: 1000px) {
+  .welcome-wrapper {
+    .main-title {
+      margin: 0 60px;
+    }
+  }}
+
+@media all and (max-width: 840px) {
+  .welcome-wrapper {
+    .main-title {
+      margin: 0 0;
+    }
+  }}
+
+@media all and (max-width: 375px) {
+
+  .welcome-wrapper {
+    padding: 129px 0 80px 0;
+
+    .main-title {
+      font-size: 36px;
+      line-height: 48px;
+      margin: 0 26px;
+    }
+
+    .wrapper_main-sub-title {
+      margin: 0 16px;
+      padding: 0 4px;
+
+      .main-sub-title {
+        font-size: 16px;
+        line-height: 24px;
+
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+

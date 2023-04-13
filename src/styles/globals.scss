@@ -3,9 +3,11 @@
 @import "services";
 @import "partner";
 @import "footer";
+@import "burgerMenu";
+@import "contactUs";
+
 
 :root {
-
   --psw-footer-bg: #27282D;
   --psw-button-color: #264EB4;
   --psw-button-hover: #3A6AE3;
@@ -14,20 +16,13 @@
   --psw-text2-color: #E0E0E0;
   --psw-text3-color: rgba(255, 255, 255, 0.6);
   --psw-text4-color: #777777;
-
-
+  --psw-error-color: #C6100F;
   --psw-primary-color: #3e914a;
   --psw-danger-color: #f64e60;
   --psw-text1-color: #242429;
-
-
   --psw-border1-color: rgba(0,0,0,.12);
-
-
   --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   --bs-body-font-family: var(--bs-font-sans-serif);
-
-
 
 }
 
@@ -37,35 +32,72 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: var(--bs-body-font-family);
+  background-image: url("../../public/backgound.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+@media all and (max-width: 768px) {
+  html {
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: auto;
+    background-position: top center;
+  }
+
+}
+
+@media all and (max-width: 375px) {
+  html {
+
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: auto;
+    background-position: center;
+  }
+
+}
 
 body {
+  width: 100%;
+  min-height: 100vh;
   font-family: var(--bs-body-font-family);
 }
 
 .container {
   max-width: 100%;
   height: 100%;
-  margin: 0 auto ;
-  background: #27282D;
+  margin: 0 auto;
 
 }
 
+.blur {
+  position: fixed;
+  transition: 0.3s ease;
+  filter: blur(2px) brightness(65%) ;
 
-.dsa {
+}
+
+.gray {
   background: #212121;
 }
+
 .content-wrapper {
-  max-width: 1280px;
+  max-width: 1308px;
+  padding: 0 14px;
   width: 100%;
   margin: 0 auto;
 }
-
-body {
-  width: 100%;
-  min-height: 100vh;
-
-  background: #212121;
-
-}
-
 

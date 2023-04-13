@@ -12,14 +12,19 @@
   left: 0;
   z-index: 10;
 
+  .logotip-link {
+    display: flex;
+    align-items: center;
+
+  }
+
   .header-links {
     display: flex;
     align-items: center;
     gap: 60px;
 
     .header-link {
-      font-family: 'Segoe UI';
-      font-style: normal;
+      font-family: var(--bs-body-font-family);
       font-weight: 600;
       font-size: 16px;
       line-height: 24px;
@@ -42,8 +47,7 @@
       transition: all 0.3s ease;
       cursor: pointer;
       color: var(--psw-white-text-color);
-      font-family: 'Segoe UI';
-      font-style: normal;
+      font-family: var(--bs-body-font-family);
       font-weight: 600;
       font-size: 14px;
       line-height: 20px;
@@ -56,4 +60,86 @@
     }
   }
 
+  .burger-button {
+    display: none;
+  }
+
 }
+
+@media all and (max-width: 1000px) {
+  .header {
+    padding: 20px 40px;
+
+    .header-links {
+      display: none;
+    }
+
+    .burger-button {
+      display: block;
+      position: relative;
+      width: 14px;
+      height: 20px;
+      border: none;
+      z-index: 1;
+      cursor: pointer;
+      background: none;
+
+      .burger-buttons {
+        position: absolute;
+        display: block;
+        width: 17.5px;
+        height: 2px;
+        background: white;
+        z-index: 2;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 16.33px;
+          height: 2px;
+          background: white;
+          top: 7px;
+          right: 0;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 21px;
+          height: 2px;
+          background: white;
+          top: -7px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .header {
+    padding: 26px 40px;
+
+    }
+}
+
+@media all and (max-width: 375px) {
+  .header {
+    padding: 16px 20px;
+
+    .logotip-link {
+      max-width: 208.58px;
+      width: 100%;
+
+      .logotip-link-image {
+        max-width: 208.58px;
+        width: 100%;
+        height: 21.6px;
+
+      }
+    }
+  }
+}
+
+
+
