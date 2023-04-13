@@ -86,7 +86,8 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
               id="email-contact"
             />
           </label>
-          <label htmlFor="#phone-contact">
+          {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+          <p className="phone-text">
             Phone Number
             <PhoneInput
               country="us"
@@ -98,7 +99,7 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
                 })
               }
             />
-          </label>
+          </p>
           <label htmlFor="#text-contact">
             Your Message
             <input
