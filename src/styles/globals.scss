@@ -51,6 +51,7 @@ body {
   margin: 0 auto;
   z-index: 200;
 
+
 }
 
 .paralax {
@@ -66,6 +67,8 @@ body {
 .blur {
   transition: 0.3s ease;
   filter: blur(2px) brightness(65%);
+  max-height: 100%;
+
 
 }
 
