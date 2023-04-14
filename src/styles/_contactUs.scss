@@ -121,15 +121,12 @@
         }
       }
 
-      .flag-dropdown {
-        width: 70px;
-      }
 
       .flag-dropdown {
         border: none;
         border-right: 1px solid rgba(255, 255, 255, 0.05);
         background: inherit;
-
+        width: 70px;
 
         .open {
           background: inherit;
@@ -138,8 +135,17 @@
         .selected-flag {
           width: 100%;
 
+          &:hover {
+            background: inherit;
+          }
+
+          &:focus {
+            background: inherit;
+          }
+
           .flag {
             margin-left: 10px;
+
           }
 
           .arrow, .up {
@@ -179,6 +185,7 @@
         &:focus {
           background: inherit;
         }
+
       }
     }
 

@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
+import Image from 'next/image';
+
+import paralax from '../../public/paralax.png';
 
 import Header from '../components/Header';
 import Welcome from '../components/Welcome';
@@ -29,7 +32,7 @@ export default function Home() {
           isShowMenu.burgerMenu === true || isShowMenu.contactMenu === true ? 'blur' : ''
         }`}
       >
-        {' '}
+        <Image src={paralax} alt="background" className="paralax" />{' '}
         <Header isShowMenu={isShowMenu} setIsShowMenu={setIsShowMenu} />
         <Welcome />
         <Services />
