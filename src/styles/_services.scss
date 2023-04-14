@@ -289,6 +289,40 @@
 
       margin: 20px 20px 0 20px;
     }
+
+    .services-cards {
+
+      max-width: 783px;
+      width: 100%;
+
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .services-card {
+        max-width: 600px;
+        width: 100%;
+
+        .card-item {
+          max-width: 600px;
+          width: 100%;
+        }
+
+        .card-text {
+          transition: 0.3s linear;
+
+          .card-title {
+            font-size: 24px;
+            line-height: 150%;
+
+            br {
+              display: none;
+            }
+          }
+        }
+
+      }
+    }
   }
 }
 
