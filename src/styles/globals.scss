@@ -34,7 +34,7 @@
 
 html {
   font-family: var(--bs-body-font-family);
-  background-image: url("../../public/backgound.svg");
+  background-image: url("../../public/as.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
@@ -48,7 +48,7 @@ html {
 
 @media all and (max-width: 768px) {
   html {
-
+    background-image: url("../../public/as.png");
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -60,7 +60,7 @@ html {
 
 @media all and (max-width: 375px) {
   html {
-
+    background-image: url("../../public/as.png");
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
