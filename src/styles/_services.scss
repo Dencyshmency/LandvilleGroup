@@ -149,6 +149,7 @@
 
 
         }
+
         .gray-text-color {
           color: rgba(255, 255, 255, 0.6);
           transition: 0.3s ease;
@@ -185,8 +186,6 @@
     }
   }
 }
-
-
 
 
 @media all and (min-width: 376px) and (max-width: 460px) {
@@ -289,24 +288,6 @@
     .services-sub-title {
 
       margin: 20px 20px 0 20px;
-    }
-
-
-    .services-cards {
-      max-width: 688px;
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: nowrap;
-      gap: 20px;
-
-      .services-card {
-        max-width: 688px;
-
-        .card-item {
-          max-width: 688px;
-        }
-      }
     }
   }
 }

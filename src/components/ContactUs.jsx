@@ -16,10 +16,24 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
     email: '',
     phone: '',
     message: '',
-    errorEmail: false,
-    errorPhone: false,
-    errorName: false,
+    errorPhone: '',
+    errorName: '',
+    submit: false,
   });
+
+  const getData = () => {
+    if (dataForm.phone.length < 11 && dataForm.name.length < 1) {
+      setDataForm({
+        ...dataForm,
+        errorPhone: 'error-input',
+        errorName: 'error-input',
+      });
+    } else if (dataForm.name.length < 1) {
+      setDataForm({ ...dataForm, errorName: 'error-input' });
+    } else if (dataForm.phone.length < 11) {
+      setDataForm({ ...dataForm, errorPhone: 'error-input' });
+    }
+  };
 
   const emailHandler = (event) => {
     setDataForm({
@@ -62,7 +76,11 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
           <label htmlFor="#name-contact">
             Your Name <span>*</span>{' '}
             <input
-              className={`contact-us-input ${dataForm.name.length !== 0 ? 'enter-input' : ''}`}
+              className={`contact-us-input ${
+                dataForm.submit === false && dataForm.name.length > 4
+                  ? 'enter-input'
+                  : dataForm.errorName
+              }`}
               onChange={(event) =>
                 setDataForm({
                   ...dataForm,
@@ -90,7 +108,13 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
           <div>
             <p className="phone-text">Phone Number</p>
             <PhoneInput
+              className={`${
+                dataForm.submit === false && dataForm.phone.length > 10
+                  ? 'enter-input'
+                  : dataForm.errorPhone
+              }`}
               country="us"
+              value={dataForm.phone}
               id="phone-contact"
               onChange={(event) =>
                 setDataForm({
@@ -117,7 +141,7 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
             />
           </label>
         </form>
-        <button type="button" className="submit-button">
+        <button type="button" className="submit-button" onClick={() => getData()}>
           Submit
         </button>
       </div>

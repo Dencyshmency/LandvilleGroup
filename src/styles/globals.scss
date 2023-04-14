@@ -38,12 +38,6 @@
   box-sizing: border-box;
 }
 
-html {
-
-}
-
-
-
 body {
   background: #27282D;
   width: 100%;
@@ -57,28 +51,23 @@ body {
   margin: 0 auto;
   z-index: 200;
 
-
 }
-
-.blur {
-
-  transition: 0.3s ease;
-  filter: blur(2px) brightness(65%);
-
-}
-
 
 .paralax {
   position: fixed;
   top: 50px;
- left: 0;
+  left: 0;
   max-width: 100%;
   object-fit: cover;
   height: 100vh;
   z-index: -1;
-
 }
 
+.blur {
+  transition: 0.3s ease;
+  filter: blur(2px) brightness(65%);
+
+}
 
 .gray {
   background: #212121;
