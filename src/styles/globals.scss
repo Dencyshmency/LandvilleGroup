@@ -50,8 +50,6 @@ body {
   height: 100%;
   margin: 0 auto;
   z-index: 200;
-
-
 }
 
 .paralax-image {
@@ -64,13 +62,11 @@ body {
   object-fit: cover;
 }
 
-
 .blur {
   transition: 0.3s ease;
   filter: blur(2px) brightness(65%);
   max-height: 100%;
   overflow: hidden;
-
 }
 
 .gray {
@@ -85,10 +81,8 @@ body {
 }
 
 @media all and (max-width: 375px) {
-
   .content-wrapper {
     max-width: 375px;
-
     width: 100%;
     margin: 0 auto;
   }

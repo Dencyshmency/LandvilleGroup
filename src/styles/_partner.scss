@@ -4,7 +4,6 @@
   align-items: center;
   padding: 174px 0;
 
-
   .partner-title {
     font-family: var(--bs-body-font-family);
     font-weight: 700;
@@ -68,8 +67,16 @@
   }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 420px) {
+  .partner-wrapper {
+    .button-contact {
+      padding: 14px 0;
+      width: 100%;
+    }
+  }
+}
 
+@media all and (max-width: 375px) {
   .partner-wrapper {
     width: 100%;
     max-width: 375px;

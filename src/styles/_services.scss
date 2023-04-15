@@ -15,8 +15,8 @@
 
   .services-sub-title_any {
     font-size: 16px;
-    line-height: 24px ;
-    display: flex ;
+    line-height: 24px;
+    display: flex;
     align-items: center;
     letter-spacing: 0.08em;
     text-transform: capitalize;
@@ -41,14 +41,12 @@
     gap: 40px 40px;
 
     .services-card {
-
       max-width: 620px;
       width: 100%;
       position: relative;
       cursor: pointer;
       overflow: hidden;
       border-radius: 12px;
-
 
       .card-item {
         max-width: 620px;
@@ -83,7 +81,6 @@
           color: var(--psw-white-text-color);
         }
 
-
         .card-title {
           font-family: var(--bs-body-font-family);
           font-weight: 700;
@@ -98,7 +95,6 @@
           transition: 0.3s ease;
           color: rgba(255, 255, 255, 0.6);
         }
-
       }
 
       .card-link {
@@ -111,6 +107,11 @@
         right: 40px;
         opacity: 0;
         transition: 0.3s linear;
+        font-family: var(--bs-body-font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--psw-text2-color);
 
         .card-arrow {
           display: block;
@@ -144,8 +145,6 @@
             height: 2px;
             background-color: var(--psw-white-text-color);
           }
-
-
         }
 
         .card-button {
@@ -157,7 +156,6 @@
           font-size: 16px;
           line-height: 24px;
           color: var(--psw-text2-color);
-
 
         }
 
@@ -192,7 +190,6 @@
       &:hover .gray-text-color {
         transition: 0.3s ease;
         color: var(--psw-white-text-color)
-
       }
     }
   }
@@ -204,7 +201,6 @@
     padding-top: 60px;
 
     .services-sub-title {
-
     }
 
     .services-cards {
@@ -218,7 +214,6 @@
         max-width: 460px;
         width: 100%;
         height: 360px;
-
 
         .card-item {
           display: none;
@@ -261,7 +256,6 @@
 
 @media all and (max-width: 1404px) {
   .services-wrapper {
-
     .services-cards {
       justify-content: center;
 
@@ -278,7 +272,6 @@
 
 @media all and (max-width: 1250px) {
   .services-wrapper {
-
     .services-cards {
       justify-content: center;
 
@@ -295,17 +288,13 @@
 
 @media all and (max-width: 1000px) {
   .services-wrapper {
-
     .services-sub-title {
-
       margin: 20px 20px 0 20px;
     }
 
     .services-cards {
-
       max-width: 783px;
       width: 100%;
-
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
@@ -379,7 +368,6 @@
             }
           }
         }
-
       }
     }
   }
@@ -391,7 +379,6 @@
 
     .services-sub-title {
       margin: 20px 0 0 0;
-
     }
 
     .services-cards {
@@ -423,7 +410,6 @@
 
         .card-text {
           left: 20px;
-
           padding: 0 20px 0 0;
 
           .card-title {
