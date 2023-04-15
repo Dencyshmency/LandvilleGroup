@@ -57,11 +57,11 @@ body {
 .paralax-image {
   position: fixed;
   left: 0;
-  top: -4px;
+  top: -2px;
   max-width: 100%;
   width: 100%;
   z-index: -4;
-
+  object-fit: cover;
 }
 
 
