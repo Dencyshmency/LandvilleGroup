@@ -69,8 +69,11 @@
 }
 
 @media all and (max-width: 375px) {
+
   .partner-wrapper {
-    padding: 140px 0;
+    width: 100%;
+    max-width: 375px;
+    padding: 140px 0 140px 0;
 
     .partner-title {
       font-weight: 700;
@@ -87,7 +90,8 @@
     }
 
     .button-contact {
-      padding: 14px 125px;
+      padding: 14px 0;
+      width: 100%;
     }
   }
 }

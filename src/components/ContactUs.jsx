@@ -7,7 +7,7 @@ import 'react-phone-input-2/lib/style.css';
 
 function ContactUs({ setIsShowMenu, isShowMenu }) {
   const toggleMenu = () => {
-    document.body.style.position = 'static';
+    document.body.style.overflow = 'unset';
     setIsShowMenu({ ...isShowMenu, contactMenu: false });
   };
 
@@ -57,6 +57,7 @@ function ContactUs({ setIsShowMenu, isShowMenu }) {
       });
     }
   };
+
   return (
     <div
       className={`wrapper-contact-us ${

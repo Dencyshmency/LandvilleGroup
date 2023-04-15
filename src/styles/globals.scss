@@ -54,21 +54,22 @@ body {
 
 }
 
-.paralax {
+.paralax-image {
   position: fixed;
-  top: 50px;
   left: 0;
+  top: -4px;
   max-width: 100%;
-  object-fit: cover;
-  height: 100vh;
-  z-index: -1;
+  width: 100%;
+  z-index: -4;
+
 }
+
 
 .blur {
   transition: 0.3s ease;
   filter: blur(2px) brightness(65%);
   max-height: 100%;
-
+  overflow: hidden;
 
 }
 
@@ -81,5 +82,15 @@ body {
   padding: 0 14px;
   width: 100%;
   margin: 0 auto;
+}
+
+@media all and (max-width: 375px) {
+
+  .content-wrapper {
+    max-width: 375px;
+
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 

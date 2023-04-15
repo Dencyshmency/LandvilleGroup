@@ -1,6 +1,6 @@
 function Partner({ setIsShowMenu, isShowMenu }) {
   const toggleMenus = () => {
-    document.body.style.position = 'fixed';
+    document.body.style.overflow = 'hidden';
     setIsShowMenu({ ...isShowMenu, contactMenu: true });
   };
   return (

@@ -4,7 +4,7 @@ import { MdOutlineAlternateEmail } from 'react-icons/md';
 
 function BurgerMenu({ isShowMenu, setIsShowMenu }) {
   const toggleMenu = () => {
-    document.body.style.position = 'static';
+    document.body.style.overflow = 'unset';
     setIsShowMenu({ ...isShowMenu, burgerMenu: false });
   };
 

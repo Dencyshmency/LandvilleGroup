@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Card from '../../public/card1.png';
 import Card2 from '../../public/card2.png';
@@ -36,11 +37,13 @@ function Services() {
                 <p className="card-sub-title">For Investors & Wholesalers</p>
                 <p className="card-title">Investor&apos;s Gateway to Lucrative Opportunities</p>
               </div>
-              <div className="card-link">
-                <button type="button" className="card-button">
-                  Explore More
-                </button>
-                <span className="card-arrow" />
+              <div>
+                <Link href="https://landsupplier.com/partners" className="card-link">
+                  <button type="button" className="card-button">
+                    Explore More
+                  </button>
+                  <span className="card-arrow" />
+                </Link>
               </div>
             </div>
             <div className="services-card">
@@ -65,7 +68,7 @@ function Services() {
               <Image src={Card3Mobile} alt="card" className="card-item-mobile" />
               <div className="card-text">
                 <p className="card-title">Real Estate Acquisitions Data</p>
-                <p className="card-sub-title">
+                <p className="services-sub-title_any">
                   Acquire Extensive Real Estate Data, Including Homes, Land, Mobile Homes, Condos,
                   And Multi-Family Units. Access Mailing Addresses, Emails, And Phone Numbers For
                   Effective Outreach And Connections.
@@ -88,11 +91,13 @@ function Services() {
                   Streamlined Process
                 </p>
               </div>
-              <div className="card-link">
-                <button type="button" className="card-button">
-                  Explore More
-                </button>
-                <span className="card-arrow" />
+              <div>
+                <Link href="https://www.landville.com/sell-land" className="card-link">
+                  <button type="button" className="card-button">
+                    Explore More
+                  </button>
+                  <span className="card-arrow" />
+                </Link>
               </div>
             </div>
             <div className="services-card">
@@ -102,11 +107,13 @@ function Services() {
                 <p className="card-sub-title">Get a Fantastic Deal</p>
                 <p className="card-title">Search LandSupplier’s Wholesale Property Deals</p>
               </div>
-              <div className="card-link">
-                <button type="button" className="card-button">
-                  Explore More
-                </button>
-                <span className="card-arrow" />
+              <div>
+                <Link href="https://landsupplier.com" className="card-link">
+                  <button type="button" className="card-button">
+                    Explore More
+                  </button>
+                  <span className="card-arrow" />
+                </Link>
               </div>
             </div>
             <div className="services-card">
@@ -116,11 +123,13 @@ function Services() {
                 <p className="card-sub-title">Properties Marketplace</p>
                 <p className="card-title">The Ultimate Platform Connecting Buyers and Sellers</p>
               </div>
-              <div className="card-link">
-                <button type="button" className="card-button">
-                  Explore More
-                </button>
-                <span className="card-arrow" />
+              <div>
+                <Link href="https://landville.com/" className="card-link">
+                  <button type="button" className="card-button">
+                    Explore More
+                  </button>
+                  <span className="card-arrow" />
+                </Link>
               </div>
             </div>
             <div className="services-card">

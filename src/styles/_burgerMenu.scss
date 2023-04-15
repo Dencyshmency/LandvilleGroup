@@ -10,7 +10,7 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
-
+  overflow-y: auto;
 
   .burger-toggle {
     display: flex;
@@ -164,7 +164,7 @@
   right: 0;
   visibility: visible;
   max-height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 
 }
 

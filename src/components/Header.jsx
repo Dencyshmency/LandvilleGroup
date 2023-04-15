@@ -5,12 +5,12 @@ import Logo from '../../public/Logotip.svg';
 
 function Header({ setIsShowMenu, isShowMenu }) {
   const toggleMenu = () => {
-    document.body.style.position = 'fixed';
+    document.body.style.overflow = 'hidden';
     setIsShowMenu({ ...isShowMenu, burgerMenu: true });
   };
 
   const toggleMenus = () => {
-    document.body.style.position = 'fixed';
+    document.body.style.overflow = 'hidden';
     setIsShowMenu({ ...isShowMenu, contactMenu: true });
   };
 
@@ -23,10 +23,10 @@ function Header({ setIsShowMenu, isShowMenu }) {
         <Link href="/" className="header-link">
           Our Services
         </Link>
-        <Link href="/" className="header-link">
+        <Link href="https://landsupplier.com" className="header-link">
           LandSupplier
         </Link>
-        <Link href="/" className="header-link">
+        <Link href="https://landville.com" className="header-link">
           LandVille
         </Link>
         <button type="button" className="button-contact-us" onClick={() => toggleMenus()}>

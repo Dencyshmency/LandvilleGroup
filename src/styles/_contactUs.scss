@@ -1,6 +1,5 @@
 
-
- .wrapper-contact-us {
+.wrapper-contact-us {
   top: 100px;
   left: calc(50% - 270px);
   position: fixed;
@@ -18,9 +17,9 @@
   opacity: 0;
   transition: 0.3s ease;
   visibility: hidden;
-   overflow-x: auto;
-   overflow-y: auto;
-   max-height: 668px;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 668px;
 
   .contact-us-toggle {
     position: absolute;
@@ -310,10 +309,7 @@
       background: var(--psw-button-hover);
     }
   }
-
-
 }
-
 
 .active-contact-menu {
   left: calc(50% - 270px);
@@ -325,6 +321,9 @@
   max-height: 668px;
 }
 
+
+
+
 @media all and (max-width: 560px) {
   .wrapper-contact-us {
     top: 0;
@@ -335,6 +334,7 @@
     border-radius: 0;
     overflow-x: auto;
     overflow-y: auto;
+
     .contact-us-toggle {
       position: absolute;
       top: 16px;
@@ -475,6 +475,19 @@
         background: var(--psw-button-hover);
       }
     }
+  }
+}
+
+@media all and (max-width: 560px) {
+  .wrapper-contact-us {
+    top: 0;
+    left: 0;
+    max-width: 375px;
+    width: 100%;
+    height: 812px;
+    border-radius: 0;
+    overflow-x: auto;
+    overflow-y: auto;
   }
 }
 
