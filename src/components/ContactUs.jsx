@@ -8,6 +8,7 @@ import 'react-phone-input-2/lib/style.css';
 function ContactUs({ setIsShowMenu, isShowMenu }) {
   const toggleMenu = () => {
     document.body.style.overflow = 'unset';
+     document.body.style.paddingRight = '17px';
     setIsShowMenu({ ...isShowMenu, contactMenu: false });
   };
 
